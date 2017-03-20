@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Modele Devoxx FR 2017 reveal.js</title>
+		<title>Junit-docker</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<!--link rel="stylesheet" href="css/theme/black.css" id="theme"-->
@@ -26,205 +26,138 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-state="intro">
-					<h1>Devoxx France 2017<br />sample presentation</h1>
-					<p style="margin-top:22%">Nicolas Martignole <a href="http://twitter.com/nmartignole">@nmartignole</a><br />
-					Zouheir Cadi <a href="http://twitter.com/zouheircadi">@zouheircadi</a><br />
-					Antonio Goncalves <a href="http://twitter.com/agoncal">@agoncal</a></p>
-				</section>
-				<section data-state="intro">
-					<h2>Welcome to Devoxx France</h2>
-					<p>This is a template for keynote</p>
-					<p>16/9</p>
-				</section>
-				<section data-state="intro content" align="center">
-					<h1 style="margin-top: 0%">We love picture</h1>
-					<img data-src="../images/devoxx_fr_2017_1080_video_hdtv.png" width="60%" style="display:block;margin-left:auto;margin-right:auto;" />
-					<p style="margin-left:15%;margin-right:15%">We try to keep the Devoxx France logo and the Tweet hashtag on all slides</p>
+					<h1><br/>Junit-docker</h1>
+					<p style="margin-top:22%">Vincent Demeester <a href="http://twitter.com/vdemeest">@vdemeest</a><br />
+					Xavier Detant <a href="http://twitter.com/XDetant">@xdetant</a></p>
 				</section>
 				<section>
-					<h2>Roadmap</h2>
-					<p>This is a slide without background images.</p>
-					<p>You must load and install 2 Fonts on your system :
-						<ul>
-							<li>Montserrat (<a href="https://www.fontsquirrel.com/fonts/montserrat">https://www.fontsquirrel.com/fonts/montserrat</a>)</li>
-							<li>Open Sans (<a href="https://www.fontsquirrel.com/fonts/open-sans">https://www.fontsquirrel.com/fonts/montserrat</a>)</li>
-						</ul>
-					</p>
-				</section>
-				<section>
-					<h2>Devoxx FR 2017 colors</h2>
+					<h2>Le projet</h2>
 					<p>main color, purple, <span class="main">#2a013b</span></p>
 					<p>secondary color, <span class="secondary">#b10142</span></p>
 					<p>third color, <span class="third">#eeeeee</span></p>
+					<h4>L'équipe</h4>
 					<p>fourth color, <span class="fourth">#10001a</span></p>
 					<p>alternate 1, <span class="atlernate1">#f7d279</span></p>
 					<p>alternate 2, <span class="alternate2">#edaf1f</span></p>
 				</section>
 				<section>
-					<h2>Devoxx FR 2017 colors</h2>
+					<h2>Junit5</h2>
 					<p>Live color chart here</p>
-					<p><a href="https://color.adobe.com/fr/DEvoxx-FR-2017-v3-color-theme-9311745/?">https://color.adobe.com/fr/DEvoxx-FR-2017-v3-color-theme-9311745/?</a></p>
 				</section>
 				<section>
-					<h3>&nbsp;</h3>
-					<p class="code">Show me some code !</p>
-					<p class="code">Try to keep a font size as big as possible. Remember also that too much code on one slide is useless. The audience reads this texte and does not listen to your presentation anymore. Try to split on different slides your presentation.</p>
-				</section>
-				<section>
-				<section data-transition="none">
-					<h3>Step 1 : add to Redis sorted set</h3>
-					<pre><code data-trim data-noescape>127.0.0.1:6363[2]> zadd hackers 1953 "Richard Stallman"
-(integer) 1
-127.0.0.1:6363[2]> 
-127.0.0.1:6363[2]> zadd hackers 1969 "Linus"
-(integer) 1
-127.0.0.1:6363[2]> zadd hackers 1912 "Alan turing" 
-(integer) 1</code></pre>
-				</section>
-				<section data-transition="none">
-					<h3>Step 2 : Show the list of Hackers</h3>
-					<pre><code data-trim data-noescape><mark>127.0.0.1:6363[2]> zadd hackers 1953 "Richard Stallman"
-(integer) 1
-127.0.0.1:6363[2]> 
-127.0.0.1:6363[2]> zadd hackers 1969 "Linus"
-(integer) 1
-127.0.0.1:6363[2]> zadd hackers 1912 "Alan turing" 
-(integer) 1</mark>
-127.0.0.1:6363[2]> zrange hackers 0 -1
-1) "Alan turing"
-2) "Richard Stallman"
-3) "Linus"</code></pre>
-				</section>
-				<section data-transition="none">
-					<h3>Step 3 : Show the list with score</h3>
-					<pre><code data-trim data-noescape><mark>127.0.0.1:6363[2]> zadd hackers 1953 "Richard Stallman"
-(integer) 1
-127.0.0.1:6363[2]> 
-127.0.0.1:6363[2]> zadd hackers 1969 "Linus"
-(integer) 1
-127.0.0.1:6363[2]> zadd hackers 1912 "Alan turing" 
-(integer) 1
-127.0.0.1:6363[2]> zrange hackers 0 -1
-1) "Alan turing"
-2) "Richard Stallman"
-3) "Linus"</mark>
-127.0.0.1:6363[2]> zrange hackers 0 -1 withscores
-1) "Alan turing"
-2) "1912"
-3) "Richard Stallman"
-4) "1953"
-5) "Linus"
-6) "1969"</code></pre>
-				</section>
-				<section data-transition="none">
-					<h3>Step 4 : Last step with transparent code</h3>
-					<pre><code data-trim data-noescape><mark>127.0.0.1:6363[2]> zadd hackers 1953 "Richard Stallman"
-(integer) 1
-127.0.0.1:6363[2]> 
-127.0.0.1:6363[2]> zadd hackers 1969 "Linus"
-(integer) 1
-127.0.0.1:6363[2]> zadd hackers 1912 "Alan turing" 
-(integer) 1
-127.0.0.1:6363[2]> zrange hackers 0 -1
-1) "Alan turing"
-2) "Richard Stallman"
-3) "Linus"
-127.0.0.1:6363[2]> zrange hackers 0 -1 withscores
-1) "Alan turing"
-2) "1912"
-3) "Richard Stallman"
-4) "1953"
-5) "Linus"
-6) "1969"</mark>
-127.0.0.1:6363[2]> zrangebyscore hackers 1910 1940
-1) "Alan turing"</code></pre>
-				</section>
+					<h2>Test d'intégrations</h2>
 				</section>
 				<section data-state="flash" align="center">
-					<h1>Live demo</h1>
+					<h1>Vivons les, en vrai…</h1>
+					<h4>…ces tests !</h4>	
+				</section>
+				<section>
+					<h2>Testons en parallèle</h2>
+					<section data-markdown>
+						<script type="text/template">
+						- Item 1
+						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					<h2>C'est dur d'écrire un test…</h2>
+					<section data-markdown>
+						<script type="text/template">
+						- Item 1
+						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					<h2>Et parfois « Murphy » s'en mêle…</h2>
+					<section data-markdown>
+						<script type="text/template">
+						- Item 1
+						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					<h2>Et ce n'est pas tout…</h2>
+					<section data-markdown>
+						<script type="text/template">
+						- Item 1
+						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
+						</script>
+					</section>
+				</section>
+				<section data-transition="none">
+					<h2>Et si…</h2>
+					<section>
+						<div style="width: 46%; display: inline-block; margin-right: 5%;">
+							<pre><code style="width: 100%">foo</code></pre>
+						</div>
+    					<div style="float: right; width: 48%; display: inline-block;">
+						<section data-markdown>
+							<script type="text/template">
+							- Item 1
+							</script>
+						</section>
+						</div>
+					</section>
+				</section>
+				<section data-transition="none">
+					<h2>Et si…</h2>
+					<section>
+						<div style="width: 46%; display: inline-block; margin-right: 5%;">
+							<pre><code style="width: 100%">foo
+bar</code></pre>
+						</div>
+    					<div style="float: right; width: 48%; display: inline-block;">
+						<section data-markdown>
+							<script type="text/template">
+							- Item 1
+							- Item 2
+							</script>
+						</section>
+						</div>
+					</section>
+				</section>
+				<section data-transition="none">
+					<h2>Et si…</h2>
+					<section>
+						<div style="width: 46%; display: inline-block; margin-right: 5%;">
+							<pre><code style="width: 100%">foo
+bar
+baz</code></pre>
+						</div>
+    					<div style="float: right; width: 48%; display: inline-block;">
+						<section data-markdown>
+							<script type="text/template">
+							- Item 1
+							- Item 2
+							- Item 3
+							</script>
+						</section>
+						</div>
+					</section>
 				</section>
 				<section data-state="flash" align="center">
-					<h1>Merci / Thanks you</h1>
+					<h4>Et si…</h4>
+					<h4>…c'était déjà fait</h4>
+					<h1>Junit5-docker</h1>
 				</section>
-				<section data-state="rightbanner">
-					<div style="width: 40%; display: inline-block; margin-right: 5%; text-align: center; margin-left: 10%">
-        				<h4>Facts</h4>
-						<p>Devoxx France 2017<br />
-						221 speakers with a bagde, 40 exhibitors<br />
-						and more than 2800 attendees</p><br/><br/><br/><br/>
-    				</div>
-    				<div style="width: 40%; display: inline-block;">
-        				<img data-src="../images/corner_02.png" width="80%" style="border: solid 5px white;"/>
-    				</div>
-				</section>
-				<section data-state="flash" align="center">
-					<h1>Less code is less bug</h1>
-				</section>
-				<section>
-					<h4>Why less slides is better than more slides</h4>
-					<ul>
-						<li>Devoxx France runs on 3 days</li>
-						<li>Audience loves live coding and demo</li>
-						<li>Too much bullet points is super boring</li>
-						<li>More text : less concentration from the audience that will just read your slides</li>
-						<li>So this is exactly what you should not do</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Pourquoi peu de diapositives c’est mieux</h4>
-					<ul>
-						<li>Devoxx France se déroule sur 3 jours</li>
-						<li>Le public préfère les démonstrations et l’écriture de code en direct</li>
-						<li>Trop de points avec des puces c’est ennuyant</li>
-						<li>Si vos slides peuvent vous remplacer, alors vous ne servez à rien comme orateur</li>
-						<li>Imaginez que votre ensemble de diapos ne doivent pas pouvoir vivre sans vous, sans votre présentation et votre contenu</li>
-						<li>Merci donc de ne PAS faire comme ce slide à mourir</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Toujours plus d'image</h4>
-					<div style="width: 50%; display: inline-block; margin-right: 5%; text-align: center;">
-						<ul>
-							<li>Les diagrammes dynamiques c’est vraiment top</li><br/><br/><br/><br/>
-						</ul>
-    				</div>
-    				<div style="width: 40%; display: inline-block;">
-        				<img data-src="../images/corner_02.png" />
-    				</div>
-				</section>
-				<section>
-					<h2>Redis Set</h2>
-					<p>TODO</p>
-				</section>
-				<section>
-					<h2>Redis Set : French Selected Speakers</h2>
-					<p>TODO</p>
-				</section>
+				<!--
 				<section>
 					<h2>Screen capture</h2>
 					<img data-src="slide_20_screen_capture.jpg" style="width: 60%;margin-left:auto;margin-right:auto;display:block;" />
 					<p align="center" style="margin-top:-10px"><a href="https://cfp.devoxx.fr">https://cfp.devoxx.fr</a></p>
 				</section>
-				<section data-state="flash">
-						<h4>&nbsp;</h4>
-						<ul>
-							<li>Here are just a few photos from Devoxx France 2015 so that you get a better idea of what you’re about to live</li>
-							<li>Voici quelques photos de Devoxx France 2016 afin de vous donner une idée de ce que vous vous apprêtez à vivre...</li>
-						</ul>
-				</section>
-				<section data-state="fullimg" data-background="slide_22.jpg">
-				</section>
+				-->
 				<section data-state="fullimg" data-background="slide_23.jpg" />
-				</section>
-				<section data-state="fullimg" data-background="slide_24.jpg" />
-				</section>
-				<section data-state="fullimg" data-background="slide_25.jpg" />
-				</section>
-				<section data-state="intro">
-					<h1>Thanks</h1>
-					<p>Contribute and propose other templates on <a href="https://bitbucket.org/nicolas_martignole/devoxxfr_templates/overview
-">https://bitbucket.org/nicolas_martignole/devoxxfr_templates/overview
-</a></p>
+					<div style="text-align: center">
+						<h1>Thanks</h1>
+					</div>
 				</section>
 			</div>
             <div class="footer">
