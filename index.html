@@ -1,193 +1,267 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Junit-docker</title>
+    <title>Junit5-docker</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<!--link rel="stylesheet" href="css/theme/black.css" id="theme"-->
-		<link rel="stylesheet" href="css/theme/devoxxfr.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <!--link rel="stylesheet" href="css/theme/black.css" id="theme"-->
+    <link rel="stylesheet" href="css/theme/devoxxfr.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-state="intro">
-					<h1><br/>Junit-docker</h1>
-					<p style="margin-top:22%">Vincent Demeester <a href="http://twitter.com/vdemeest">@vdemeest</a><br />
-					Xavier Detant <a href="http://twitter.com/XDetant">@xdetant</a></p>
-				</section>
-				<section>
-					<h2>Le projet</h2>
-					<p>main color, purple, <span class="main">#2a013b</span></p>
-					<p>secondary color, <span class="secondary">#b10142</span></p>
-					<p>third color, <span class="third">#eeeeee</span></p>
-					<h4>L'équipe</h4>
-					<p>fourth color, <span class="fourth">#10001a</span></p>
-					<p>alternate 1, <span class="atlernate1">#f7d279</span></p>
-					<p>alternate 2, <span class="alternate2">#edaf1f</span></p>
-				</section>
-				<section>
-					<h2>Junit5</h2>
-					<p>Live color chart here</p>
-				</section>
-				<section>
-					<h2>Test d'intégrations</h2>
-				</section>
-				<section data-state="flash" align="center">
-					<h1>Vivons les, en vrai…</h1>
-					<h4>…ces tests !</h4>	
-				</section>
-				<section>
-					<h2>Testons en parallèle</h2>
-					<section data-markdown>
-						<script type="text/template">
-						- Item 1
-						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
-						</script>
-					</section>
-				</section>
-				<section>
-					<h2>C'est dur d'écrire un test…</h2>
-					<section data-markdown>
-						<script type="text/template">
-						- Item 1
-						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
-						</script>
-					</section>
-				</section>
-				<section>
-					<h2>Et parfois « Murphy » s'en mêle…</h2>
-					<section data-markdown>
-						<script type="text/template">
-						- Item 1
-						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
-						</script>
-					</section>
-				</section>
-				<section>
-					<h2>Et ce n'est pas tout…</h2>
-					<section data-markdown>
-						<script type="text/template">
-						- Item 1
-						- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
-						- Item 3 <!-- .element: class="fragment" data-fragment-index="1" -->
-						</script>
-					</section>
-				</section>
-				<section data-transition="none">
-					<h2>Et si…</h2>
-					<section>
-						<div style="width: 46%; display: inline-block; margin-right: 5%;">
-							<pre><code style="width: 100%">foo</code></pre>
-						</div>
-    					<div style="float: right; width: 48%; display: inline-block;">
-						<section data-markdown>
-							<script type="text/template">
-							- Item 1
-							</script>
-						</section>
-						</div>
-					</section>
-				</section>
-				<section data-transition="none">
-					<h2>Et si…</h2>
-					<section>
-						<div style="width: 46%; display: inline-block; margin-right: 5%;">
-							<pre><code style="width: 100%">foo
-bar</code></pre>
-						</div>
-    					<div style="float: right; width: 48%; display: inline-block;">
-						<section data-markdown>
-							<script type="text/template">
-							- Item 1
-							- Item 2
-							</script>
-						</section>
-						</div>
-					</section>
-				</section>
-				<section data-transition="none">
-					<h2>Et si…</h2>
-					<section>
-						<div style="width: 46%; display: inline-block; margin-right: 5%;">
-							<pre><code style="width: 100%">foo
-bar
-baz</code></pre>
-						</div>
-    					<div style="float: right; width: 48%; display: inline-block;">
-						<section data-markdown>
-							<script type="text/template">
-							- Item 1
-							- Item 2
-							- Item 3
-							</script>
-						</section>
-						</div>
-					</section>
-				</section>
-				<section data-state="flash" align="center">
-					<h4>Et si…</h4>
-					<h4>…c'était déjà fait</h4>
-					<h1>Junit5-docker</h1>
-				</section>
-				<!--
-				<section>
-					<h2>Screen capture</h2>
-					<img data-src="slide_20_screen_capture.jpg" style="width: 60%;margin-left:auto;margin-right:auto;display:block;" />
-					<p align="center" style="margin-top:-10px"><a href="https://cfp.devoxx.fr">https://cfp.devoxx.fr</a></p>
-				</section>
-				-->
-				<section data-state="fullimg" data-background="slide_23.jpg" />
-					<div style="text-align: center">
-						<h1>Thanks</h1>
-					</div>
-				</section>
-			</div>
-            <div class="footer">
-              <p>#DevoxxFR</p><img align="right" src="../images/logos Devoxx France/logo-texte-devoxx-france-400.png" />
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-state="intro">
+          <h1>Au secours, mes tests d'intégration sont instables</h1>
+          <h4><br/>Junit5-docker</h4>
+          <p style="margin-top:16%">Vincent Demeester <a href="http://twitter.com/vdemeest">@vdemeest</a><br />
+            Xavier Detant <a href="http://twitter.com/XDetant">@xdetant</a></p>
+        </section>
+        <section>
+          <h2>Le projet : Quizz</h2>
+          <h4>Que designe-t-on par le nom Makemake ?</h4>
+          <ol>
+            <li>Planète du système solaire</li>
+            <li>Repas africain</li>
+            <li>Un tube des années 70</li>
+            <li>La réponse D</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Notre architecture</h2>
+          <!-- schema here -->
+        </section>
+        <section data-state="flash" align="center">
+          <h1>Voyons le code</h1>
+          <!-- schema here -->
+        </section>
+        <section>
+          <h2>Test d'intégrations</h2>
+          <!-- schema avec gros rond rouge -->
+        </section>
+        <section data-state="flash" align="center">
+          <h1>Vivons les, en vrai…</h1>
+          <h4>…ces tests !</h4>
+        </section>
+        <section>
+          <h2>Règles</h2>
+          <Ul>
+            <li>Nous: runner de test</li>
+            <li>Vous: base de données clés valeurs</li>
+            <li>Jeux de tests: si vous en avez 2, <b>vous crasher</b> et alerte sonore</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <section data-markdown>
+            <script type="text/template">
+              - Accès concurent serveur commun <!-- .element: class="fragment" data-fragment-index="1" --> (duplication de l'infrastructure)
+              - Test mal écrit <!-- .element: class="fragment" data-fragment-index="2" --> (fouetter le dev !!! — photo oncle bob)
+              - Interruption de service <!-- .element: class="fragment" data-fragment-index="3" --> (?_? fouetter l'ops)
+              - Hétérogénéité dev/prod <!-- .element: class="fragment" data-fragment-index="3" --> (millionnaire)
+              - Latence réseau <!-- .element: class="fragment" data-fragment-index="3" --> (fibre optique => millionnaire)
+              - Charge du setup ops <!-- .element: class="fragment" data-fragment-index="3" --> (+ d'ops)
+              - Charge du setup dev <!-- .element: class="fragment" data-fragment-index="3" --> (documentation docx)
+              - Facilité d'usage <!-- .element: class="fragment" data-fragment-index="3" --> (dev compétent)
+            </script>
+          </section>
+        </section>
+        <section data-transition="none">
+          <h2>Et si…</h2>
+          <section>
+            <div style="width: 46%; display: inline-block; margin-right: 5%;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Accès concurent serveur commun
+                  - Test mal écrit
+                  - Interruption de service
+                  - Hétérogénéité dev/prod
+                  - Latence réseau
+                  - Charge du setup ops
+                  - Charge du setup dev
+                  - Facilité d'usage
+                </script>
+              </section>
             </div>
-		</div>
+            <div style="float: right; width: 48%; display: inline-block;">
+              <section data-markdown>
+                <script type="text/template">
+                </script>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section data-transition="none">
+          <h2>Et si…</h2>
+          <section>
+            <div style="width: 46%; display: inline-block; margin-right: 5%;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Accès concurent serveur commun
+                  - Test mal écrit
+                  - Interruption de service
+                  - Hétérogénéité dev/prod
+                  - Latence réseau
+                  - Charge du setup ops
+                  - Charge du setup dev
+                  - Facilité d'usage
+                </script>
+              </section>
+            </div>
+            <div style="float: right; width: 48%; display: inline-block;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Local
+                </script>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section data-transition="none">
+          <h2>Et si…</h2>
+          <section>
+            <div style="width: 46%; display: inline-block; margin-right: 5%;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Accès concurent serveur commun
+                  - Test mal écrit
+                  - Interruption de service
+                  - Hétérogénéité dev/prod
+                  - Latence réseau
+                  - Charge du setup ops
+                  - Charge du setup dev
+                  - Facilité d'usage
+                </script>
+              </section>
+            </div>
+            <div style="float: right; width: 48%; display: inline-block;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Local
+                  - Container
+                </script>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section data-transition="none">
+          <h2>Et si…</h2>
+          <section>
+            <div style="width: 46%; display: inline-block; margin-right: 5%;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Accès concurent serveur commun
+                  - Test mal écrit
+                  - Interruption de service
+                  - Hétérogénéité dev/prod
+                  - Latence réseau
+                  - Charge du setup ops
+                  - Charge du setup dev
+                  - Facilité d'usage
+                </script>
+              </section>
+            </div>
+            <div style="float: right; width: 48%; display: inline-block;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Local
+                  - Container
+                  - Clean up automatique
+                </script>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section data-transition="none">
+          <h2>Et si…</h2>
+          <section>
+            <div style="width: 46%; display: inline-block; margin-right: 5%;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Accès concurent serveur commun
+                  - Test mal écrit
+                  - Interruption de service
+                  - Hétérogénéité dev/prod
+                  - Latence réseau
+                  - Charge du setup ops
+                  - Charge du setup dev
+                  - Facilité d'usage
+                </script>
+              </section>
+            </div>
+            <div style="float: right; width: 48%; display: inline-block;">
+              <section data-markdown>
+                <script type="text/template">
+                  - Local
+                  - Container
+                  - Clean up automatique
+                  - <code>@Docker(image="mongo")</code>
+                </script>
+              </section>
+            </div>
+          </section>
+        </section>
+        <section data-state="flash" align="center">
+          <h4>Et si…</h4>
+          <h4>…c'était déjà fait</h4>
+          <h1>Junit5-docker</h1>
+        </section>
+        <!--
+        <section>
+          <h2>Screen capture</h2>
+          <img data-src="slide_20_screen_capture.jpg" style="width: 60%;margin-left:auto;margin-right:auto;display:block;" />
+          <p align="center" style="margin-top:-10px"><a href="https://cfp.devoxx.fr">https://cfp.devoxx.fr</a></p>
+        </section>
+        -->
+        <section data-state="fullimg" data-background="slide_23.jpg" />
+        <div style="text-align: center">
+          <h1>Thanks</h1>
+          <!-- 2 tronches avec logo de nos boites en dessous -->
+        </div>
+</section>
+</div>
+<div class="footer">
+  <p>#DevoxxFR</p><img align="right" src="../images/logos Devoxx France/logo-texte-devoxx-france-400.png" />
+</div>
+</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				center: false,
-				controls: false,
-				progress: true,
-                width: 1280,
-                height: 720,
-                slideNumber: true,
-                margin: 0.0,
+<script>
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+  history: true,
+  center: false,
+  controls: false,
+  progress: true,
+  width: 1280,
+  height: 720,
+  slideNumber: true,
+  margin: 0.0,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+  // More info https://github.com/hakimel/reveal.js#dependencies
+  dependencies: [
+  { src: 'plugin/markdown/marked.js' },
+  { src: 'plugin/markdown/markdown.js' },
+  { src: 'plugin/notes/notes.js', async: true },
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+  });
+</script>
+</body>
 </html>
