@@ -43,14 +43,18 @@
         </section>
         <section>
           <h2>Notre architecture</h2>
-          <!-- schema here -->
+          <div style="text-align: center">
+            <img src="schema1.png" />
+          </div>
         </section>
         <section data-state="flash" align="center">
           <h1>Voyons le code</h1>
         </section>
         <section>
           <h2>Test d'intégrations</h2>
-          <!-- schema avec gros rond rouge -->
+          <div style="text-align: center">
+            <img src="schema2.png" />
+          </div>
         </section>
         <section data-state="flash" align="center">
           <h1>Vivons les, en vrai…</h1>
@@ -97,9 +101,9 @@
             Duplication de l'infrastructure
           </div>
         </section>
-        <section data-state="fullimg" data-background="300-Movie-Publicity-Still-300-222269_1488_6951.jpg" />
-        <div style="text-align: center">
-        </div>
+        <section data-state="fullimg" data-background="300-Movie-Publicity-Still-300-222269_1488_6951.jpg">
+          <div style="text-align: center">
+          </div>
         </section>
         <section data-transition="none">
           <h2>Prolèmes rencontrés (solutions)</h2>
@@ -128,9 +132,9 @@
             Fouetter le developpeur
           </div>
         </section>
-        <section data-state="fullimg" data-background="IMG_365151.jpg" />
-        <div style="text-align: center">
-        </div>
+        <section data-state="fullimg" data-background="IMG_365151.jpg">
+          <div style="text-align: center">
+          </div>
         </section>
         <section data-transition="none">
           <h2>Prolèmes rencontrés (solutions)</h2>
@@ -316,48 +320,51 @@
           <h4>…c'était déjà fait</h4>
           <h1>Junit5-docker</h1>
         </section>
-        <!--
-        <section>
-          <h2>Screen capture</h2>
-          <img data-src="slide_20_screen_capture.jpg" style="width: 60%;margin-left:auto;margin-right:auto;display:block;" />
-          <p align="center" style="margin-top:-10px"><a href="https://cfp.devoxx.fr">https://cfp.devoxx.fr</a></p>
+        <section data-state="fullimg" data-background="slide_23.jpg">
+          <div style="text-align: center">
+            <h1>Merci !</h1>
+            <section>
+              <div style="width: 46%; display: inline-block; margin-right: 5%;">
+                <img src="xavier.jpg" style="width: 250px" /><br/>
+                <img src="soat-logo.png" style="width: 140px;" />
+              </div>
+              <div style="float: right; width: 48%; display: inline-block;">
+                <img src="vincent.jpg" style="width: 250px;" /><br />
+                <img src="docker-logo.png" style="width: 140px;" />
+              </div>
+            </section>
+            <!-- 2 tronches avec logo de nos boites en dessous -->
+          </div>
         </section>
-        -->
-        <section data-state="fullimg" data-background="slide_23.jpg" />
-        <div style="text-align: center">
-          <h1>Thanks</h1>
-          <!-- 2 tronches avec logo de nos boites en dessous -->
-        </div>
-</section>
-</div>
-<div class="footer">
-  <p>#DevoxxFR</p><img align="right" src="../images/logos Devoxx France/logo-texte-devoxx-france-400.png" />
-</div>
-</div>
+      </div>
+      <div class="footer">
+        <p>#DevoxxFR</p><img align="right" src="../images/logos Devoxx France/logo-texte-devoxx-france-400.png" />
+      </div>
+    </div>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-<script>
-  // More info https://github.com/hakimel/reveal.js#configuration
-  Reveal.initialize({
-  history: true,
-  center: false,
-  controls: false,
-  progress: true,
-  width: 1280,
-  height: 720,
-  slideNumber: true,
-  margin: 0.0,
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      center: false,
+      controls: false,
+      progress: true,
+      width: 1280,
+      height: 720,
+      slideNumber: true,
+      margin: 0.0,
 
-  // More info https://github.com/hakimel/reveal.js#dependencies
-  dependencies: [
-  { src: 'plugin/markdown/marked.js' },
-  { src: 'plugin/markdown/markdown.js' },
-  { src: 'plugin/notes/notes.js', async: true },
-  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-  ]
-  });
-</script>
-</body>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
+  </body>
 </html>
