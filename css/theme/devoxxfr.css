@@ -95,7 +95,7 @@ body {
   margin: 0 0 0 1em; }
 
 .reveal ol {
-  list-style-type: decimal; }
+  list-style-type: upper-alpha; }
 
 .reveal ul {
   list-style-type: disc; }

@@ -25,42 +25,52 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-state="intro">
+        <section data-state="intro" data-transition="none">
           <h1>Au secours, mes tests d'intégration sont instables</h1>
           <h4><br/>Junit5-docker</h4>
           <p style="margin-top:16%">Vincent Demeester <a href="http://twitter.com/vdemeest">@vdemeest</a><br />
             Xavier Detant <a href="http://twitter.com/XDetant">@xdetant</a></p>
         </section>
-        <section>
+        <section data-transition="none">
           <h2>Le projet : Quizz</h2>
           <h4>Que designe-t-on par le nom Makemake ?</h4>
-          <ol>
+          <ol type="I" style="margin-left: 10%;">
             <li>Planète du système solaire</li>
             <li>Repas africain</li>
             <li>Un tube des années 70</li>
             <li>La réponse D</li>
           </ol>
         </section>
-        <section>
+        <section data-transition="none">
+          <h2>Le projet : Quizz</h2>
+          <h4>Que designe-t-on par le nom Makemake ?</h4>
+          <ol type="I" style="margin-left: 10%;">
+            <li style="color: greenyellow;">Planète du système solaire</li>
+            <li>Repas africain</li>
+            <li>Un tube des années 70</li>
+            <li>La réponse D</li>
+          </ol>
+        </section>
+        <section data-transition="none">
           <h2>Notre architecture</h2>
           <div style="text-align: center">
-            <img src="schema1.png" />
+            <img src="Diagram.png" style="width: 70%" />
           </div>
         </section>
-        <section data-state="flash" align="center">
+        <section data-state="flash" align="center" data-transition="none">
           <h1>Voyons le code</h1>
         </section>
-        <section>
+        <section data-transition="none">
           <h2>Test d'intégrations</h2>
           <div style="text-align: center">
-            <img src="schema2.png" />
+            <img src="Diagram2.png" style="width: 70%" />
           </div>
         </section>
-        <section data-state="flash" align="center">
+        <section data-state="flash" align="center" data-transition="none">
           <h1>Vivons les, en vrai…</h1>
           <h4>…ces tests !</h4>
         </section>
-        <section>
+        <section data-transition="none">
           <h2>Règles</h2>
           <Ul>
             <li>Nous: runner de test</li>
@@ -76,6 +86,10 @@
             </ul>
           </div>
           <div style="float: right; width: 48%; display: inline-block;">
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="doppelganger.png">
+          <div style="text-align: center">
           </div>
         </section>
         <section data-transition="none">
@@ -101,7 +115,7 @@
             Duplication de l'infrastructure
           </div>
         </section>
-        <section data-state="fullimg" data-background="300-Movie-Publicity-Still-300-222269_1488_6951.jpg">
+        <section data-state="fullimg" data-background="whip_indiana.jpg">
           <div style="text-align: center">
           </div>
         </section>
@@ -132,7 +146,7 @@
             Fouetter le developpeur
           </div>
         </section>
-        <section data-state="fullimg" data-background="IMG_365151.jpg">
+        <section data-state="fullimg" data-background="whip_indiana_invert.jpg">
           <div style="text-align: center">
           </div>
         </section>
@@ -159,6 +173,178 @@
               <li>Test mal écrit</li>
               <li>Interruption de service</li>
               <li>Hétérogénéité dev/prod</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="maxresdefault.jpg">
+          <div style="text-align: center">
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="maxresdefault_invert.jpg">
+          <div style="text-align: center">
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+              <li>Charge du setup ops</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="clones_2.jpg">
+          <div style="text-align: center">
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+              <li>Charge du setup ops</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)<br/>
+            Ajouter plus d'ops
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+              <li>Charge du setup ops</li>
+              <li>Charge du setup dev</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)<br/>
+            Ajouter plus d'ops
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="clones_2_invert.jpg">
+          <div style="text-align: center">
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
+              <li>Latence réseau</li>
+              <li>Charge du setup ops</li>
+              <li>Charge du setup dev</li>
+            </ul>
+          </div>
+          <div style="float: right; width: 48%; display: inline-block;">
+            Duplication de l'infrastructure<br/>
+            Fouetter le developpeur<br/>
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)<br/>
+            Ajouter plus d'ops<br/>
+            Faire de la documentation installation
+          </div>
+        </section>
+        <section data-transition="none">
+          <h2>Prolèmes rencontrés (solutions)</h2>
+          <div style="width: 46%; display: inline-block; margin-right: 5%;">
+            <ul>
+              <li>Accès concurent serveur</li>
+              <li>Test mal écrit</li>
+              <li>Interruption de service</li>
+              <li>Hétérogénéité dev/prod</li>
               <li>Latence réseau</li>
               <li>Charge du setup ops</li>
               <li>Charge du setup dev</li>
@@ -168,7 +354,15 @@
           <div style="float: right; width: 48%; display: inline-block;">
             Duplication de l'infrastructure<br/>
             Fouetter le developpeur<br/>
-            Fouetter l'ops
+            Fouetter l'ops<br/>
+            Millionaire<br/>
+            Fibre optique (millionnaire)<br/>
+            Ajouter plus d'ops<br/>
+            Faire de la documentation installation
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="rolling.jpg">
+          <div style="text-align: center">
           </div>
         </section>
         <section data-transition="none">
@@ -202,7 +396,7 @@
             <div style="width: 46%; display: inline-block; margin-right: 5%;">
               <section data-markdown>
                 <script type="text/template">
-                  - Accès concurent serveur commun
+                  - Accès concurent serveur
                   - Test mal écrit
                   - Interruption de service
                   - Hétérogénéité dev/prod
@@ -226,7 +420,7 @@
           <section>
             <div style="width: 46%; display: inline-block; margin-right: 5%;">
               <ul>
-                <li style="color: orangered;">Accès concurent serveur commun</li>
+                <li style="color: orangered;">Accès concurent serveur</li>
                 <li>Test mal écrit</li>
                 <li style="color: orangered;">Interruption de service</li>
                 <li>Hétérogénéité dev/prod</li>
@@ -248,7 +442,7 @@
           <section>
             <div style="width: 46%; display: inline-block; margin-right: 5%;">
               <ul>
-                <li style="color: orangered;">Accès concurent serveur commun</li>
+                <li style="color: orangered;">Accès concurent serveur</li>
                 <li>Test mal écrit</li>
                 <li style="color: orangered;">Interruption de service</li>
                 <li style="color: orange;">Hétérogénéité dev/prod</li>
@@ -271,7 +465,7 @@
           <section>
             <div style="width: 46%; display: inline-block; margin-right: 5%;">
               <ul>
-                <li style="color: orangered;">Accès concurent serveur commun</li>
+                <li style="color: orangered;">Accès concurent serveur</li>
                 <li style="color: yellow;">Test mal écrit</li>
                 <li style="color: orangered;">Interruption de service</li>
                 <li style="color: orange;">Hétérogénéité dev/prod</li>
@@ -295,7 +489,7 @@
           <section>
             <div style="width: 46%; display: inline-block; margin-right: 5%;">
               <ul>
-                <li style="color: orangered;">Accès concurent serveur commun</li>
+                <li style="color: orangered;">Accès concurent serveur</li>
                 <li style="color: yellow;">Test mal écrit</li>
                 <li style="color: orangered;">Interruption de service</li>
                 <li style="color: orange;">Hétérogénéité dev/prod</li>
@@ -315,12 +509,12 @@
             </div>
           </section>
         </section>
-        <section data-state="flash" align="center">
+        <section data-state="flash" align="center" data-transition="none">
           <h4>Et si…</h4>
           <h4>…c'était déjà fait</h4>
           <h1>Junit5-docker</h1>
         </section>
-        <section data-state="fullimg" data-background="slide_23.jpg">
+        <section data-state="fullimg" data-transition="none">
           <div style="text-align: center">
             <h1>Merci !</h1>
             <section>
@@ -338,7 +532,7 @@
         </section>
       </div>
       <div class="footer">
-        <p>#DevoxxFR</p><img align="right" src="../images/logos Devoxx France/logo-texte-devoxx-france-400.png" />
+        <p>#DevoxxFR</p><img align="right" src="logo-texte-devoxx-france-400.png" />
       </div>
     </div>
 
