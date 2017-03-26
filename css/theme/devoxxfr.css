@@ -377,7 +377,9 @@ html.content .slides section h1 {
   bottom: 0.5em;
   width: 1.5em;
   font-family: "Montserrat";
-  font-size: 18px; }
+  font-size: 18px;
+  display: none !important;
+}
 
 .reveal section img {
   border: none; }
