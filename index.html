@@ -58,56 +58,104 @@
           </div>
         </section>
         <section data-state="flash" align="center" data-transition="none">
-          <h1>Voyons le code</h1>
+          <h1>Deux semaines plus tard..</h1>
         </section>
-        <!--
-        <section data-transition="none">
-          <h2>Test d'intégrations</h2>
-          <div style="text-align: center">
-            <img src="Diagram2.png" style="width: 70%" />
-          </div>
-        </section>
-        -->
         <section data-state="flash" align="center" data-transition="none">
           <h1>Vivons ces tests, en vrai…</h1>
           <h4>Tests in action</h4>
         </section>
         <section data-transition="none">
-          <h2>Règles</h2>
-          <Ul>
-            <li>Nous: runner de test</li>
-            <li>Vous: base de données clés valeurs</li>
-            <li>Nous vous fournissons un jeu de test</li>
-            <li>
-              Vous <b>pétez</b> si:
-              <ul>
-                <li>vous ne trouvez pas la réponse</li>
-                <li>vous avez 2 jeux de tests en main</li>
-              </ul>
-            </li>
-          </ul>
+          <h2>Walkthrough</h2>
+          <pre><code>@BeforeEach
+public void createDatabase() {
+    MongoClient mongoClient = new MongoClient("my-awesome-cloud");
+    database = mongoClient.getDatabase("awesome-quiz");
+    repository = new AnswerRepository(database);
+}</pre></code>
+        </section>
+        <section data-transition="none">
+          <h2>Walkthrough</h2>
+          <pre><code>@BeforeEach
+public void createDatabase() {
+    MongoClient mongoClient = new MongoClient("my-awesome-cloud");
+    database = mongoClient.getDatabase("awesome-quiz");
+    repository = new AnswerRepository(database);
+}
+
+@Test
+void shouldGetAnswerFromMongo() {
+    repository.add("emmétropique", "sans défaut");
+
+
+}</pre></code>
+        </section>
+        <section data-transition="none">
+          <h2>Walkthrough</h2>
+          <pre><code>@BeforeEach
+public void createDatabase() {
+    MongoClient mongoClient = new MongoClient("my-awesome-cloud");
+    database = mongoClient.getDatabase("awesome-quiz");
+    repository = new AnswerRepository(database);
+}
+
+@Test
+void shouldGetAnswerFromMongo() {
+    repository.add("emmétropique", "sans défaut");
+    String actualAnswer = repository.getAnswerFor("emmétropique");
+
+}</pre></code>
+        </section>
+        <section data-transition="none">
+          <h2>Walkthrough</h2>
+          <pre><code>@BeforeEach
+public void createDatabase() {
+    MongoClient mongoClient = new MongoClient("my-awesome-cloud");
+    database = mongoClient.getDatabase("awesome-quiz");
+    repository = new AnswerRepository(database);
+}
+
+@Test
+void shouldGetAnswerFromMongo() {
+    repository.add("emmétropique", "sans défaut");
+    String actualAnswer = repository.getAnswerFor("emmétropique");
+    assertThat(actualAnswer).containsIgnoringCase("sans défaut");
+}</pre></code>
+        </section>
+        <section data-transition="none">
+          <h2>Walkthrough</h2>
+          <pre><code>@BeforeEach
+public void createDatabase() {
+    MongoClient mongoClient = new MongoClient("my-awesome-cloud");
+    database = mongoClient.getDatabase("awesome-quiz");
+    repository = new AnswerRepository(database);
+}
+
+@Test
+void shouldGetAnswerFromMongo() {
+    repository.add("emmétropique", "sans défaut");
+    String actualAnswer = repository.getAnswerFor("emmétropique");
+    assertThat(actualAnswer).containsIgnoringCase("sans défaut");
+}
+
+@AfterEach
+public void dropDatabase() {
+    database.drop();
+}</pre></code>
         </section>
         <section data-state="flash" align="center" data-transition="none">
-          <h1>Accès concurent serveur</h1>
+          <h1>Régle(s)</h1>
+          <h4>Si vous n'avez pas la réponse, vous levez la main</h4>
+        </section>
+        <section data-state="flash" align="center" data-transition="none">
+          <h1>Accès concurrent serveur</h1>
         </section>
         <section data-state="fullimg" data-background="doppelganger.png">
           <div style="text-align: center">
           </div>
-	</section>
-        <section data-transition="none">
-          <h2>Règles</h2>
-          <Ul>
-            <li>Nous: runner de test</li>
-            <li>Vous: base de données clés valeurs</li>
-            <li>Nous vous fournissons un jeu de test</li>
-            <li>
-              Vous <b>pétez</b> si:
-              <ul>
-                <li>vous ne trouvez pas la réponse</li>
-                <li>vous avez 2 jeux de tests en main</li>
-              </ul>
-            </li>
-          </ul>
+        </section>
+        <section data-state="flash" align="center" data-transition="none">
+          <h1>Régle(s)</h1>
+          <h4>Si vous n'avez pas la réponse, vous levez la main</h4>
         </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Test mal écrit</h1>
@@ -115,21 +163,10 @@
         <section data-state="fullimg" data-background="whip_indiana.jpg">
           <div style="text-align: center">
           </div>
-	</section>
-        <section data-transition="none">
-          <h2>Règles</h2>
-          <Ul>
-            <li>Nous: runner de test</li>
-            <li>Vous: base de données clés valeurs</li>
-            <li>Nous vous fournissons un jeu de test</li>
-            <li>
-              Vous <b>pétez</b> si:
-              <ul>
-                <li>vous ne trouvez pas la réponse</li>
-                <li>vous avez 2 jeux de tests en main</li>
-              </ul>
-            </li>
-          </ul>
+        </section>
+        <section data-state="flash" align="center" data-transition="none">
+          <h1>Régle(s)</h1>
+          <h4>Si vous n'avez pas la réponse, vous levez la main</h4>
         </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Interruption de service</h1>
@@ -137,42 +174,42 @@
         <section data-state="fullimg" data-background="whip_indiana_invert.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Hétérogénéité dev/prod</h1>
         </section>
         <section data-state="fullimg" data-background="maxresdefault.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Latence réseau</h1>
         </section>
         <section data-state="fullimg" data-background="maxresdefault_invert.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Charge du setup ops</h1>
         </section>
         <section data-state="fullimg" data-background="clones_2.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Charge du setup dev</h1>
         </section>
         <section data-state="fullimg" data-background="clones_2_invert.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-state="flash" align="center" data-transition="none">
           <h1>Facilité d'usage</h1>
         </section>
         <section data-state="fullimg" data-background="rolling.jpg">
           <div style="text-align: center">
           </div>
-	</section>
+        </section>
         <section data-transition="none">
           <h2>Problèmes rencontrés (solutions)</h2>
           <div style="width: 46%; display: inline-block; margin-right: 5%;">
@@ -318,13 +355,13 @@
           </section>
         </section>
         <section data-state="flash" align="center" data-transition="none">
-          <h4>Et si… c'était déjà fait</h4>
+          <h4>Quelques semaines plus tard..</h4>
           <h1>Junit5-docker</h1>
-	  <h4><a href="https://github.com/FaustXVI/junit5-docker">github.com/FaustXVI/junit5-docker</a></h4>
+          <h4><a href="https://github.com/FaustXVI/junit5-docker">github.com/FaustXVI/junit5-docker</a></h4>
         </section>
         <section data-state="fullimg" data-transition="none">
           <div style="text-align: center">
-            <h1>Merci !</h1>
+            <h1>Qui sommes-nous ?</h1>
             <section>
               <div style="width: 46%; display: inline-block; margin-right: 5%;">
                 <img src="xavier.jpg" style="width: 250px" /><br/>
@@ -335,7 +372,15 @@
                 <img src="docker-logo.png" style="width: 140px;" />
               </div>
             </section>
-            <!-- 2 tronches avec logo de nos boites en dessous -->
+          </div>
+        </section>
+        <section data-state="fullimg" data-background="dontpanic.jpg">
+          <div style="text-align: center">
+          </div>
+        </section>
+        <section data-state="flash" algin="center" data-transition="none">
+          <div style="text-align: center">
+            <h1>Merci !</h1>
           </div>
         </section>
       </div>
